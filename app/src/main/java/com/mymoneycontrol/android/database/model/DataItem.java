@@ -1,29 +1,28 @@
 package com.mymoneycontrol.android.database.model;
 
 import io.realm.RealmObject;
-import io.realm.annotations.PrimaryKey;
 
 /**
  * Created by jrizvan on 1/28/17.
  */
 
 public class DataItem extends RealmObject {
-    Integer amountType;
 
-    @PrimaryKey
-    Integer id;
+    public Integer id;
 
-    Double totalAmount;
+    public Double totalAmount;
 
-    Long updatedTime;
+    public Long updatedTime;
 
-    Integer quantity;
+    public Double quantity;
 
-    public Integer getAmountType() {
+    public String amountType;
+
+    public String getAmountType() {
         return amountType;
     }
 
-    public void setAmountType(Integer amountType) {
+    public void setAmountType(String amountType) {
         this.amountType = amountType;
     }
 
@@ -43,11 +42,11 @@ public class DataItem extends RealmObject {
         this.id = id;
     }
 
-    public Integer getQuantity() {
+    public Double getQuantity() {
         return quantity;
     }
 
-    public void setQuantity(Integer quantity) {
+    public void setQuantity(Double quantity) {
         this.quantity = quantity;
     }
 

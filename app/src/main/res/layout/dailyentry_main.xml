@@ -9,19 +9,56 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <!--Top Bar-->
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:orientation="horizontal"
-            android:padding="2dp">
+                android:layout_width="match_parent"
+                android:id="@+id/currency_total_layout"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_height="50dp">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="22sp"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Daily spend = "/>
 
-            <ImageView
-                android:id="@+id/currency_img_1"
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="22sp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/currency_total_count_view"
+                    android:textColor="@android:color/black"
+                    android:text="0.0"/>
+
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="SAVE"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#fff"
+                    android:padding="2dp"
+                    android:textSize="20sp"
+                    android:id="@+id/currency_save_view"
+                    android:background="@color/colorPrimary"/>
+        </LinearLayout>
+
+        <!--10 INR -->
+        <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:layout_weight="0.5"
-                android:scaleType="centerInside"
-                android:src="@drawable/teninr_new" />
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                android:padding="2dp">
+
+            <ImageView
+                    android:id="@+id/currency_img_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_weight="0.5"
+                    android:scaleType="centerInside"/>
 
             <LinearLayout
                 android:id="@+id/currencycount1_layout"
@@ -42,13 +79,13 @@
                     android:src="@drawable/ic_thumb_up_black_48dp" />
 
                 <TextView
-                    android:id="@+id/currencycount1_count"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="1"
-                    android:textColor="@android:color/black"
-                    android:textSize="20sp" />
+                        android:id="@+id/currencycount1_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="0"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
 
                 <ImageView
                     android:id="@+id/currencycount1_down"
@@ -59,11 +96,13 @@
             </LinearLayout>
         </LinearLayout>
 
+        <!--20 INR -->
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:orientation="horizontal"
-            android:padding="2dp">
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                android:padding="2dp">
 
             <ImageView
                 android:id="@+id/currency_img_2"
@@ -71,7 +110,7 @@
                 android:layout_height="200dp"
                 android:layout_weight="0.5"
                 android:scaleType="centerInside"
-                android:src="@drawable/fivehinr_new" />
+            />
 
             <LinearLayout
                 android:id="@+id/currencycount2_layout"
@@ -92,13 +131,13 @@
                     android:src="@drawable/ic_thumb_up_black_48dp" />
 
                 <TextView
-                    android:id="@+id/currencycount2_count"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="1"
-                    android:textColor="@android:color/black"
-                    android:textSize="20sp" />
+                        android:id="@+id/currencycount2_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="0"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
 
                 <ImageView
                     android:id="@+id/currencycount2_down"
@@ -109,11 +148,13 @@
             </LinearLayout>
         </LinearLayout>
 
+        <!--50 INR -->
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:orientation="horizontal"
-            android:padding="2dp">
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                android:padding="2dp">
 
             <ImageView
                 android:id="@+id/currency_img_3"
@@ -121,7 +162,7 @@
                 android:layout_height="200dp"
                 android:layout_weight="0.5"
                 android:scaleType="centerInside"
-                android:src="@drawable/twokinr_new" />
+            />
 
             <LinearLayout
                 android:id="@+id/currencycount3_layout"
@@ -142,13 +183,13 @@
                     android:src="@drawable/ic_thumb_up_black_48dp" />
 
                 <TextView
-                    android:id="@+id/currencycount3_count"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="1"
-                    android:textColor="@android:color/black"
-                    android:textSize="20sp" />
+                        android:id="@+id/currencycount3_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="0"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
 
                 <ImageView
                     android:id="@+id/currencycount3_down"
@@ -156,6 +197,163 @@
                     android:layout_height="wrap_content"
                     android:scaleType="centerInside"
                     android:src="@drawable/ic_thumb_down_black_48dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--100 INR -->
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                android:padding="2dp">
+
+            <ImageView
+                    android:id="@+id/currency_img_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_weight="0.5"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/inr_new_hundred"/>
+
+            <LinearLayout
+                    android:id="@+id/currencycount4_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:visibility="gone">
+
+                <ImageView
+                        android:id="@+id/currencycount4_up"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_thumb_up_black_48dp"
+                />
+
+                <TextView
+                        android:id="@+id/currencycount4_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="0"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp"/>
+
+                <ImageView
+                        android:id="@+id/currencycount4_down"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_thumb_down_black_48dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--500 INR -->
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                android:padding="2dp">
+
+            <ImageView
+                    android:id="@+id/currency_img_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_weight="0.5"
+                    android:scaleType="centerInside"
+            />
+
+            <LinearLayout
+                    android:id="@+id/currencycount5_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:visibility="gone">
+
+                <ImageView
+                        android:id="@+id/currencycount5_up"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_thumb_up_black_48dp"/>
+
+                <TextView
+                        android:id="@+id/currencycount5_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="0"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp"/>
+
+                <ImageView
+                        android:id="@+id/currencycount5_down"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_thumb_down_black_48dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--2000 INR -->
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                android:padding="2dp">
+
+            <ImageView
+                    android:id="@+id/currency_img_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_weight="0.5"
+                    android:scaleType="centerInside"
+            />
+
+            <LinearLayout
+                    android:id="@+id/currencycount6_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:visibility="gone">
+
+                <ImageView
+                        android:id="@+id/currencycount6_up"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_thumb_up_black_48dp"/>
+
+                <TextView
+                        android:id="@+id/currencycount6_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="0"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp"/>
+
+                <ImageView
+                        android:id="@+id/currencycount6_down"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_thumb_down_black_48dp"/>
             </LinearLayout>
         </LinearLayout>
 
